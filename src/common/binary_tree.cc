@@ -13,7 +13,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 //==================================================================
 
 #include <cstdio>
-#include "BinaryTree.h"
+#include "binary_tree.h"
 
 BinaryTreeNode* CreateBinaryTreeNode(int value)
 {

@@ -12,7 +12,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 // 作者：何海涛
 //==================================================================
 
-#include "Array.h"
+#include "array.h"
 #include <stdlib.h>
 #include <utility>
 #include <stdexcept>

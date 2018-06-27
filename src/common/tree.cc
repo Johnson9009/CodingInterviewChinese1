@@ -12,7 +12,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 // 作者：何海涛
 //==================================================================
 
-#include "Tree.h"
+#include "tree.h"
 #include <cstdio>
 
 TreeNode* CreateTreeNode(int value)
