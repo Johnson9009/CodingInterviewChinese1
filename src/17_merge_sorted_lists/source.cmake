@@ -11,7 +11,6 @@
 
 set(17_MERGE_SORTED_LISTS_SRCS ${17_MERGE_SORTED_LISTS_SRCS}
     ${CMAKE_CURRENT_LIST_DIR}/merge_sorted_lists.cc
-    ${CMAKE_HOME_DIRECTORY}/src/common/list.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
@@ -22,3 +21,4 @@ add_executable(17_merge_sorted_lists ${17_MERGE_SORTED_LISTS_SRCS})
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
 target_compile_features(17_merge_sorted_lists PRIVATE cxx_std_11)
+target_link_libraries(17_merge_sorted_lists basic_data_structure)

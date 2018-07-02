@@ -17,7 +17,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 
 #include <cstdio>
 #include <stdexcept>
-#include "common/list.h"
+#include "list.h"
 
 void DeleteNode(ListNode** head, ListNode* delete_node) {
   if ((head == nullptr) || (*head == nullptr) || (delete_node == nullptr)) {

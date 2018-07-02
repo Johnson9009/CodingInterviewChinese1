@@ -17,7 +17,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 
 #include <cstdio>
 #include <stack>
-#include "common/list.h"
+#include "list.h"
 
 void PrintListReversingly_Iteratively(ListNode const* head) {
   if (head == nullptr) return;

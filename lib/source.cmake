@@ -9,16 +9,19 @@
 # and any other commands must be placed below all "include" commands. This file only need to give a
 # description of the relationship between targets and source files that inside current directory.
 
-set(19_MIRROR_OF_BINARY_TREE_SRCS ${19_MIRROR_OF_BINARY_TREE_SRCS}
-    ${CMAKE_CURRENT_LIST_DIR}/mirror_of_binary_tree.cc
+set(BASIC_DATA_STRUCTURE_SRCS ${BASIC_DATA_STRUCTURE_SRCS}
+    ${CMAKE_CURRENT_LIST_DIR}/array.cc
+    ${CMAKE_CURRENT_LIST_DIR}/binary_tree.cc
+    ${CMAKE_CURRENT_LIST_DIR}/list.cc
+    ${CMAKE_CURRENT_LIST_DIR}/string_util.cc
+    ${CMAKE_CURRENT_LIST_DIR}/tree.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
 # script files, so we must lay all commands which need source file list, such as "add_executable",
 # bellow to any "include" command which aim to include "source.cmake".
-add_executable(19_mirror_of_binary_tree ${19_MIRROR_OF_BINARY_TREE_SRCS})
+add_library(basic_data_structure SHARED ${BASIC_DATA_STRUCTURE_SRCS})
 # PRIVATE: Target requires some compile features only when it is built itself, but its consumers are
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
-target_compile_features(19_mirror_of_binary_tree PRIVATE cxx_std_11)
-target_link_libraries(19_mirror_of_binary_tree basic_data_structure)
+target_compile_features(basic_data_structure PRIVATE cxx_std_11)

@@ -16,7 +16,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 // 题目: 定义一个函数, 输入一个链表的头结点, 反转该链表并输出反转后链表的头结点.
 
 #include <cstdio>
-#include "common/list.h"
+#include "list.h"
 
 ListNode* ReverseList(ListNode* head) {
   if ((head == nullptr) || (head->m_pNext == nullptr)) return head;

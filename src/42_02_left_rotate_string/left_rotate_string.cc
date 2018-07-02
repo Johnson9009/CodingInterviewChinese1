@@ -19,7 +19,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 #include <string.h>
 #include <cstdio>
 #include <stdexcept>
-#include "common/string_util.h"
+#include "string_util.h"
 
 void ReverseString(char* str, int begin, int end) {
   int length = strlen(str);

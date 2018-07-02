@@ -11,7 +11,6 @@
 
 set(05_PRINT_LIST_IN_REVERSED_ORDER_SRCS ${05_PRINT_LIST_IN_REVERSED_ORDER_SRCS}
     ${CMAKE_CURRENT_LIST_DIR}/print_list_in_reversed_order.cc
-    ${CMAKE_HOME_DIRECTORY}/src/common/list.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
@@ -22,3 +21,4 @@ add_executable(05_print_list_in_reversed_order ${05_PRINT_LIST_IN_REVERSED_ORDER
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
 target_compile_features(05_print_list_in_reversed_order PRIVATE cxx_std_11)
+target_link_libraries(05_print_list_in_reversed_order basic_data_structure)

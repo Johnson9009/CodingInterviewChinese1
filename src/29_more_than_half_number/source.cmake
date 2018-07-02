@@ -11,7 +11,6 @@
 
 set(29_MORE_THAN_HALF_NUMBER_SRCS ${29_MORE_THAN_HALF_NUMBER_SRCS}
     ${CMAKE_CURRENT_LIST_DIR}/more_than_half_number.cc
-    ${CMAKE_HOME_DIRECTORY}/src/common/array.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
@@ -22,3 +21,4 @@ add_executable(29_more_than_half_number ${29_MORE_THAN_HALF_NUMBER_SRCS})
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
 target_compile_features(29_more_than_half_number PRIVATE cxx_std_11)
+target_link_libraries(29_more_than_half_number basic_data_structure)

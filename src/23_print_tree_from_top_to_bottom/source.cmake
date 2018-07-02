@@ -11,7 +11,6 @@
 
 set(23_PRINT_TREE_FROM_TOP_TO_BOTTOM_SRCS ${23_PRINT_TREE_FROM_TOP_TO_BOTTOM_SRCS}
     ${CMAKE_CURRENT_LIST_DIR}/print_tree_from_top_to_bottom.cc
-    ${CMAKE_HOME_DIRECTORY}/src/common/binary_tree.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
@@ -22,3 +21,4 @@ add_executable(23_print_tree_from_top_to_bottom ${23_PRINT_TREE_FROM_TOP_TO_BOTT
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
 target_compile_features(23_print_tree_from_top_to_bottom PRIVATE cxx_std_11)
+target_link_libraries(23_print_tree_from_top_to_bottom basic_data_structure)

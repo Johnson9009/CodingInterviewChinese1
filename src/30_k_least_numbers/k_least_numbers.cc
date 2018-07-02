@@ -17,7 +17,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 // 是1, 2, 3, 4.
 
 #include <cstdio>
-#include "common/array.h"
+#include "array.h"
 
 #include <functional>
 #include <iostream>

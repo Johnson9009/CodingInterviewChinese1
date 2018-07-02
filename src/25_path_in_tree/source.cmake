@@ -11,7 +11,6 @@
 
 set(25_PATH_IN_TREE_SRCS ${25_PATH_IN_TREE_SRCS}
     ${CMAKE_CURRENT_LIST_DIR}/path_in_tree.cc
-    ${CMAKE_HOME_DIRECTORY}/src/common/binary_tree.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
@@ -22,3 +21,4 @@ add_executable(25_path_in_tree ${25_PATH_IN_TREE_SRCS})
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
 target_compile_features(25_path_in_tree PRIVATE cxx_std_11)
+target_link_libraries(25_path_in_tree basic_data_structure)

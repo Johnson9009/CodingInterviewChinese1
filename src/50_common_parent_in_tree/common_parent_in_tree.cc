@@ -18,7 +18,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 #include <cstdio>
 #include <list>
 #include <stdexcept>
-#include "common/tree.h"
+#include "tree.h"
 
 bool GetPath(TreeNode const* root, TreeNode const* node, std::vector<TreeNode const*>* path) {
   if ((root == nullptr) || (node == nullptr) || (path == nullptr)) {

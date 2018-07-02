@@ -17,7 +17,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 
 #include <cstdio>
 #include <deque>
-#include "common/binary_tree.h"
+#include "binary_tree.h"
 
 void PrintFromTopToBottom(BinaryTreeNode const* root) {
   if (root == nullptr) return;

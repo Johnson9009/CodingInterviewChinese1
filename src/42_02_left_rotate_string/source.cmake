@@ -11,7 +11,6 @@
 
 set(42_02_LEFT_ROTATE_STRING_SRCS ${42_02_LEFT_ROTATE_STRING_SRCS}
     ${CMAKE_CURRENT_LIST_DIR}/left_rotate_string.cc
-    ${CMAKE_HOME_DIRECTORY}/src/common/string_util.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
@@ -22,3 +21,4 @@ add_executable(42_02_left_rotate_string ${42_02_LEFT_ROTATE_STRING_SRCS})
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
 target_compile_features(42_02_left_rotate_string PRIVATE cxx_std_11)
+target_link_libraries(42_02_left_rotate_string basic_data_structure)

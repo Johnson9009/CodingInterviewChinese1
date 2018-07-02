@@ -19,7 +19,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 
 #include <cstdio>
 #include <stdexcept>
-#include "common/list.h"
+#include "list.h"
 
 ListNode* FindKthToTail(ListNode* pListHead, unsigned int k) {
   if ((pListHead == nullptr) || (k == 0)) throw std::invalid_argument("");

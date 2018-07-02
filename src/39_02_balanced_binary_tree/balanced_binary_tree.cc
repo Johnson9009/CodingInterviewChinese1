@@ -20,7 +20,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 #include <cstdio>
 #include <cstdlib>
 #include <stdexcept>
-#include "common/binary_tree.h"
+#include "binary_tree.h"
 
 // ====================方法1====================
 int TreeDepth(BinaryTreeNode const* root) {

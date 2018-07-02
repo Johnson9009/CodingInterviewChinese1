@@ -18,7 +18,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 
 #include <cstdio>
 #include <stdexcept>
-#include "common/binary_tree.h"
+#include "binary_tree.h"
 
 void ConvertCore(BinaryTreeNode* root, BinaryTreeNode** largest_node) {
   if (largest_node == nullptr) throw std::invalid_argument("");

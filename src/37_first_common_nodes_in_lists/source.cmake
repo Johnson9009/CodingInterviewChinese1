@@ -11,7 +11,6 @@
 
 set(37_FIRST_COMMON_NODES_IN_LISTS_SRCS ${37_FIRST_COMMON_NODES_IN_LISTS_SRCS}
     ${CMAKE_CURRENT_LIST_DIR}/first_common_nodes_in_lists.cc
-    ${CMAKE_HOME_DIRECTORY}/src/common/list.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
@@ -22,3 +21,4 @@ add_executable(37_first_common_nodes_in_lists ${37_FIRST_COMMON_NODES_IN_LISTS_S
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
 target_compile_features(37_first_common_nodes_in_lists PRIVATE cxx_std_11)
+target_link_libraries(37_first_common_nodes_in_lists basic_data_structure)

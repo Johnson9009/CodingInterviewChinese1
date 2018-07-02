@@ -18,7 +18,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 
 #include <cstdio>
 #include <stdexcept>
-#include "common/array.h"
+#include "array.h"
 
 bool CheckMoreThanHalf(int* numbers, int length, int number) {
   int times = 0;

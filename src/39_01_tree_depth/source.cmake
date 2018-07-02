@@ -11,7 +11,6 @@
 
 set(39_01_TREE_DEPTH_SRCS ${39_01_TREE_DEPTH_SRCS}
     ${CMAKE_CURRENT_LIST_DIR}/tree_depth.cc
-    ${CMAKE_HOME_DIRECTORY}/src/common/binary_tree.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
@@ -22,3 +21,4 @@ add_executable(39_01_tree_depth ${39_01_TREE_DEPTH_SRCS})
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
 target_compile_features(39_01_tree_depth PRIVATE cxx_std_11)
+target_link_libraries(39_01_tree_depth basic_data_structure)

@@ -17,7 +17,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 
 #include <cstdio>
 #include <stack>
-#include "common/binary_tree.h"
+#include "binary_tree.h"
 
 void MirrorRecursively(BinaryTreeNode* root) {
   if ((root == nullptr) || ((root->m_pLeft == nullptr) && (root->m_pRight == nullptr))) return;

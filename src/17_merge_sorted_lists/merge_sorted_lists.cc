@@ -17,7 +17,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 // 3.11中的链表1和链表2, 则合并之后的升序链表如链表3所示.
 
 #include <cstdio>
-#include "common/list.h"
+#include "list.h"
 
 ListNode* MergeSortedList(ListNode* head1, ListNode* head2) {
   if (head1 == nullptr) return head2;

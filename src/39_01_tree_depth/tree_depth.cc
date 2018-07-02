@@ -17,7 +17,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 // 一条路径, 最长路径的长度为树的深度.
 
 #include <cstdio>
-#include "common/binary_tree.h"
+#include "binary_tree.h"
 
 int TreeDepth(BinaryTreeNode const* root) {
   if (root == nullptr) return 0;

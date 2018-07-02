@@ -11,7 +11,6 @@
 
 set(30_K_LEAST_NUMBERS_SRCS ${30_K_LEAST_NUMBERS_SRCS}
     ${CMAKE_CURRENT_LIST_DIR}/k_least_numbers.cc
-    ${CMAKE_HOME_DIRECTORY}/src/common/array.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
@@ -22,3 +21,4 @@ add_executable(30_k_least_numbers ${30_K_LEAST_NUMBERS_SRCS})
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
 target_compile_features(30_k_least_numbers PRIVATE cxx_std_11)
+target_link_libraries(30_k_least_numbers basic_data_structure)

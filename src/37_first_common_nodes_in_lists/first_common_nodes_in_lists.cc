@@ -17,7 +17,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 
 #include <cstdio>
 #include <stdexcept>
-#include "common/list.h"
+#include "list.h"
 
 int GetListLength(ListNode const* head) {
   ListNode const* node = head;

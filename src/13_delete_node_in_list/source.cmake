@@ -11,7 +11,6 @@
 
 set(13_DELETE_NODE_IN_LIST_SRCS ${13_DELETE_NODE_IN_LIST_SRCS}
     ${CMAKE_CURRENT_LIST_DIR}/delete_node_in_list.cc
-    ${CMAKE_HOME_DIRECTORY}/src/common/list.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
@@ -22,3 +21,4 @@ add_executable(13_delete_node_in_list ${13_DELETE_NODE_IN_LIST_SRCS})
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
 target_compile_features(13_delete_node_in_list PRIVATE cxx_std_11)
+target_link_libraries(13_delete_node_in_list basic_data_structure)

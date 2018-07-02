@@ -11,7 +11,6 @@
 
 set(50_COMMON_PARENT_IN_TREE_SRCS ${50_COMMON_PARENT_IN_TREE_SRCS}
     ${CMAKE_CURRENT_LIST_DIR}/common_parent_in_tree.cc
-    ${CMAKE_HOME_DIRECTORY}/src/common/tree.cc
 )
 
 # Because source file list of each target, such as "UNIT_TEST_SOURCES", is defined in above CMake
@@ -22,3 +21,4 @@ add_executable(50_common_parent_in_tree ${50_COMMON_PARENT_IN_TREE_SRCS})
 # not required to use a compiler which supports these features.
 # PUBLIC or INTERFACE: The interface of target require some compile features.
 target_compile_features(50_common_parent_in_tree PRIVATE cxx_std_11)
+target_link_libraries(50_common_parent_in_tree basic_data_structure)

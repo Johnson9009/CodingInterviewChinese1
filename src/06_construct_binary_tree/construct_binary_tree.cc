@@ -20,7 +20,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 #include <cstdio>
 #include <exception>
 #include <stdexcept>
-#include "common/binary_tree.h"
+#include "binary_tree.h"
 
 BinaryTreeNode* ConstructCore(int const* preorder_begin, int const* preorder_end,
                               int const* inorder_begin, int const* inorder_end) {

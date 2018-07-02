@@ -19,7 +19,7 @@ https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)
 #include <cstdio>
 #include <stdexcept>
 #include <vector>
-#include "common/binary_tree.h"
+#include "binary_tree.h"
 
 void FindPathCore(BinaryTreeNode const* root, int target, std::vector<int>* node_path) {
   if ((root == nullptr) || (node_path == nullptr)) throw std::invalid_argument("");
